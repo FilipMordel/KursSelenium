@@ -31,47 +31,56 @@ public class Funkcje {
         element.clear();
         // Wpisz imie
         element.sendKeys("Karol");
+        System.out.println(element.getTagName() + " : " + element.getAttribute("value"));
         WebElement element1 = driver.findElement(By.id("last-name"));
         // Wyczyść teskst zapisany w elemencie
         element1.clear();
         // Wpisz nazwisko
         element1.sendKeys("Kowalski");
-//        WebElement radio1 = driver.findElement(By.name("gender"));
+        System.out.println(element1.getTagName() + " : " + element1.getAttribute("value"));
+      WebElement radio1 = driver.findElement(By.name("gender"));
 //
 //        //Zaznacza pierszy radio
-//        radio1.click();
-        List<WebElement> genders = driver.findElements(By.name("gender"));
-        genders.get(0).click();
+       radio1.click();
+//        List<WebElement> genders = driver.findElements(By.name("gender"));
+//        genders.get(0).click();
+        System.out.println(radio1.getTagName() + " : " + radio1.getAttribute("value"));
         WebElement element3 = driver.findElement(By.id("dob"));
         // Wyczyść teskst zapisany w elemencie
         element3.clear();
         // Wpisz date urodzenia
         element3.sendKeys("5/22/2010");
+        System.out.println(element3.getTagName() + " : " + element3.getAttribute("value"));
         WebElement element4 = driver.findElement(By.id("address"));
         // Wyczyść teskst zapisany w elemencie
         element4.clear();
         // Wpisz adres
         element4.sendKeys("Prosta 51");
+        System.out.println(element4.getTagName() + " : " + element4.getAttribute("value"));
         WebElement element5 = driver.findElement(By.id("email"));
         // Wyczyść teskst zapisany w elemencie
         element5.clear();
         // Wpisz adres
         element5.sendKeys("karol.kowalski@mailinator.com");
+        System.out.println(element5.getTagName() + " : " + element5.getAttribute("value"));
         WebElement element6 = driver.findElement(By.id("password"));
         // Wyczyść teskst zapisany w elemencie
         element6.clear();
         // Wpisz haslo
         element6.sendKeys("Pass123");
+        System.out.println(element6.getTagName() + " : " + element6.getAttribute("value"));
         WebElement element7 = driver.findElement(By.id("company"));
         // Wyczyść teskst zapisany w elemencie
         element7.clear();
         // Wpisz nazwe firmy
         element7.sendKeys("Coders Lab");
+        System.out.println(element7.getTagName() + " : " + element7.getAttribute("value"));
         WebElement element8 = driver.findElement(By.id("comment"));
         // Wyczyść teskst zapisany w elemencie
         element8.clear();
         // Wpisz komentarz
         element8.sendKeys("To jest mój pierwszy automat testowy");
+        System.out.println(element8.getTagName() + " : " + element8.getAttribute("value"));
         // Prześlij formularz
         element.submit();
     }
