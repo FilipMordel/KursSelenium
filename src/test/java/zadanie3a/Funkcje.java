@@ -18,7 +18,7 @@ public class Funkcje {
         // Uruchom nowy egzemplarz przeglądarki Chrome
         driver = new ChromeDriver();
         // Zmaksymalizuj okno przeglądarki
-//        driver.manage().window().maximize();
+        driver.manage().window().maximize();
         // Przejdź do Bing
         driver.get("https://katalon-test.s3.amazonaws.com/demo-aut/dist/html/form.html");
     }
